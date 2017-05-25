@@ -1,0 +1,86 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Create reusable HTML components with the "include" tag in TwigJS</title>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
+  <style>
+    .hover-lift { transition: all 0.1s; box-shadow: 0 3px 10px rgba(0,0,0,0.1); }
+    .hover-lift:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
+  </style>
+</head>
+
+<body class="mw8 mv4 center sans-serif bg-near-white">
+
+  <ul class="list mv0 nh3 pa0 center flex flex-wrap lh-copy">
+
+    <!-- ##### Tile Component ##### -->
+    <li class="w-third pa3">
+      <div class="bg-white br2 hover-lift">
+        <img class="br--top br2" src="./img/img1.jpg" alt="">
+        <div class="pa3 mt2 mh2">
+          <h2 class="mt0 mb3 lh-title">Saltwater in the air</h2>
+          <p class="mt0 mb2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio repudiandae suscipit.</p>
+        </div>
+      </div>
+    </li>
+
+    <!-- ##### Tile Component ##### -->
+    <li class="w-third pa3">
+      <div class="bg-white br2 hover-lift">
+        <img class="br--top br2" src="./img/img2.jpg" alt="">
+        <div class="pa3 mt2 mh2">
+          <h2 class="mt0 mb3 lh-title">Life is an open field</h2>
+          <p class="mt0 mb2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio repudiandae suscipit.</p>
+        </div>
+      </div>
+    </li>
+
+    <!-- ##### Tile Component ##### -->
+    <li class="w-third pa3">
+      <div class="bg-white br2 hover-lift">
+        <img class="br--top br2" src="./img/img3.jpg" alt="">
+        <div class="pa3 mt2 mh2">
+          <h2 class="mt0 mb3 lh-title">Harvest of the year</h2>
+          <p class="mt0 mb2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio repudiandae suscipit.</p>
+        </div>
+      </div>
+    </li>
+
+    <!-- ##### Tile Component ##### -->
+    <li class="w-third pa3">
+      <div class="bg-white br2 hover-lift">
+        <img class="br--top br2" src="./img/img4.jpg" alt="">
+        <div class="pa3 mt2 mh2">
+          <h2 class="mt0 mb3 lh-title">Northern light sky</h2>
+          <p class="mt0 mb2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio repudiandae suscipit.</p>
+        </div>
+      </div>
+    </li>
+
+    <!-- ##### Tile Component ##### -->
+    <li class="w-third pa3">
+      <div class="bg-white br2 hover-lift">
+        <img class="br--top br2" src="./img/img5.jpg" alt="">
+        <div class="pa3 mt2 mh2">
+          <h2 class="mt0 mb3 lh-title">Impeccable nature</h2>
+          <p class="mt0 mb2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio repudiandae suscipit.</p>
+        </div>
+      </div>
+    </li>
+
+    <!-- ##### Tile Component ##### -->
+    <li class="w-third pa3">
+      <div class="bg-white br2 hover-lift">
+        <img class="br--top br2" src="./img/img6.jpg" alt="">
+        <div class="pa3 mt2 mh2">
+          <h2 class="mt0 mb3 lh-title">Bananas for days!</h2>
+          <p class="mt0 mb2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio repudiandae suscipit.</p>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+</body>
+</html>
