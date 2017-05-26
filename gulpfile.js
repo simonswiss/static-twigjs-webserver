@@ -3,13 +3,14 @@ const twig = require('gulp-twig')
 const webserver = require('gulp-webserver')
 
 const PATHS = {
-  templates: 'src/templates/**/*',
+  watch: 'src/templates/**/*',
+  compile: 'src/templates/*.*',
   base: 'src/templates',
   dist: 'dist'
 }
 
 gulp.task('twig', () => {
-  return gulp.src(PATHS.templates)
+  return gulp.src(PATHS.compile)
     .pipe(twig({ base: PATHS.base }))
     .pipe(gulp.dest(PATHS.dist))
 })
@@ -20,5 +21,5 @@ gulp.task('webserver', () => {
 })
 
 gulp.task('default', ['twig', 'webserver'], () => {
-  gulp.watch(PATHS.templates, ['twig'])
+  gulp.watch(PATHS.watch, ['twig'])
 })
