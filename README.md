@@ -1,6 +1,6 @@
 # TwigJS templates to static HTML pages
 
-A simple boilerplate to compile TwigJS templates to static HTML. [Tachyons](http://tachyons.io) is loaded via CDN for quick prototyping.
+A simple boilerplate to compile TwigJS templates to static HTML. [Tachyons](http://tachyons.io) is loaded locally for quick prototyping.
 
 ## Getting started
 
