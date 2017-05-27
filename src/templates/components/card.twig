@@ -1,0 +1,22 @@
+{% set data = {
+  title: "This is the title",
+  desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio repudiandae suscipit.",
+  image: "img-default.jpg"
+} %}
+
+{% set data = {
+  title: title is defined ? title : fallback.title,
+  desc: desc is defined ? desc : fallback.desc,
+  image: image is defined ? image : fallback.image
+} %}
+
+<!-- ##### Card Component ##### -->
+<li class="w-100 w-50-m w-third-l pb0 pb3-ns pa3">
+  <div class="bg-white br2 shadow">
+    <img class="br--top br2" src="./img/{{ data.image }}" alt="">
+    <div class="pa3 mt2 mh2">
+      <h2 class="mt0 mb3 lh-title">{{ data.title }}</h2>
+      <p class="mt0 mb2">{{ data.desc }}</p>
+    </div>
+  </div>
+</li>
