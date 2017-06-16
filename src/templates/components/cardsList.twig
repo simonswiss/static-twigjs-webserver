@@ -1,15 +1,43 @@
+{% set cards = [
+  {
+    desc: "At 20 °C one milliliter of water can dissolve about 0.357 grams of salt.",
+    image: "img2.jpg"
+  },
+  {
+    title: "Life is an open field",
+    desc: "The leafy stalk of the plant produces separate pollen and ovuliferous inflorescences.",
+    image: "img1.jpg"
+  },
+  {
+    title: "Harvest of the year",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio repudiandae suscipit.",
+    image: "img6.jpg"
+  }
+] %}
+
 <ul class="list mv0 nh3 pa0 center flex flex-wrap lh-copy">
 
-  {% include "components/card.twig" with {
-    image: "img4.jpg"
+  {% for card in cards %}
+
+    {% include "components/card.twig" with {
+      title: card.title,
+      desc: card.desc,
+      image: card.image
+    } %}
+
+  {% endfor %}
+
+  {# {% include "components/card.twig" with {
+    title: "How is your day?",
+    image: "img2.jpg"
   } %}
 
   {% include "components/card.twig" with {
     title: "Saltwater in the air",
-    desc: "At 20 °C one mm of water can dissolve about 0.357 grams of salt.",
-    image: "img2.jpg"
+    desc: "At 20 °C one mm of water can dissolve 0.357 grams of salt.",
+    image: "img1.jpg"
   } %}
 
-  {% include "components/card.twig" %}
+  {% include "components/card.twig" %} #}
 
 </ul>
